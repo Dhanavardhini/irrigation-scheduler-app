@@ -1,0 +1,134 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f5f6fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.form label {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.form input {
+  margin-left: 10px;
+  padding: 8px;
+  flex: 1;
+  border: 1px solid #dcdde1;
+  border-radius: 4px;
+}
+
+.form button {
+  margin-top: 1rem;
+  padding: 10px;
+  background-color: #5964e0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.filters button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background: #dcdde1;
+  cursor: pointer;
+}
+
+.filters .active {
+  background: #40739e;
+  color: white;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  margin-top: 1rem;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #dcdde1;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 0.5rem;
+  }
+
+  .form {
+    gap: 8px;
+  }
+
+  .filters {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .filters button {
+    width: 100%;
+  }
+
+  table th, table td {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form input,
+  .form button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+}
+
