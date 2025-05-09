@@ -2,7 +2,7 @@
 
 A responsive and dynamic React application to generate, filter, and visualize irrigation schedules for multiple plots and motors.
 
-![App Screenshot](assets/screen.png)
+![App Screenshot](./assets/screen.png)
 
 ## 🚀 Features
 - Supports multiple plots and motors
